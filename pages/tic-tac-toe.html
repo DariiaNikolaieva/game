@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="/assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/tic-tac-toe.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <main>
+      <div class="container container__name">
+        <a href="/index.html" class="button back__btn">Back</a>
+        <p class="title">Who plays?</p>
+        <div>
+          <input
+            class="input__name name1"
+            type="text"
+            placeholder="Player 1"
+            autofocus
+          />
+          <input class="input__name name2" type="text" placeholder="Player 2" />
+        </div>
+        <p class="start__name">Who plays as X?</p>
+        <button class="flip__coin">Flipping a coin</button>
+      </div>
+      <div class="container container__game hidden">
+        <button class="button game__play_again btn__disabled">Play again</button>
+        <a href="/index.html" class="button back__btn">Back</a>
+        <h1 class="title">Tic Tac Toe</h1>
+        <p class="game__turn">X go!</p>
+        <div class="playboard">
+          <div class="playboard__cell"></div>
+          <div class="playboard__cell"></div>
+          <div class="playboard__cell"></div>
+          <div class="playboard__cell"></div>
+          <div class="playboard__cell"></div>
+          <div class="playboard__cell"></div>
+          <div class="playboard__cell"></div>
+          <div class="playboard__cell"></div>
+          <div class="playboard__cell"></div>
+          <div class="cross"></div>
+        </div>
+      </div>
+      <div class="container container__score hidden">
+        <button class="button score__reset">Reset score</button>
+        <p class="title">Score</p>
+        <ul class="score__table">
+          <li class="score__first_player"></li>
+          <li class="score__second_player"></li>
+          <li class="score__draw">Draw <span>0</span></li>
+        </ul>
+        <p class="score__rounds">
+          Rounds played: <br />
+          <span class="score__rounds_number">0 / 4</span>
+        </p>
+        <ul class="score__winners">Last 10 winners</ul>
+      </div>
+      <div class="backdrop hidden"></div>
+      <div class="js-container conf__container hidden"></div>
+      <div class="modal__container hidden">
+        <div class="modal">
+          <div class="modal__winner">
+            <p class="title modal__winner_text"></p>
+            <a href="/pages/tic-tac-toe.html" class="button back__btn">Play again</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+        <p class="footer_year"><span>© </span>2022</p>
+        <a href="https://github.com/DariiaNikolaieva" target="_blank"
+          >Dariia Nikolaieva</a
+        >
+      <a class="rs_link" href="https://rs.school/js-stage0/" target="_blank">The Rolling Scopes School</a>
+    </footer>
+    <script src="/js/tic-tac-toe.js"></script>
+  </body>
+</html>

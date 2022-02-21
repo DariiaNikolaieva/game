@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  body {
+    color: #333;
+    background-color: #ffbf69;
+    font-family: "Shizuru", cursive;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer {
+    width: 100vw;
+    padding: 25px 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+
+  .btns__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    margin: 50px;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 2px 20px 1px rgba(255, 159, 28, 0.8);
+  }
+
+  .choose__btn {
+    cursor: pointer;
+    padding-top: 5px;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    color: #333;
+    text-align: center;
+    border: 1px solid #ffbf69;
+    border-radius: 25px;
+  }
+
+  .choose__btn:hover,
+  .choose__btn:focus {
+    color: #fff;
+    background-color: #ffbf69;
+  }
